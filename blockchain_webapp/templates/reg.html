@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <title>Register</title>
+    <header class="header">
+        <div class="content">
+            <h1 class="heading">
+                <span class="small">Indroduce</span>
+                <br>
+                <span class="no-fill">Yourself</span>
+            </h1>
+
+        </div>
+      </header>
+  </head>
+  <body>
+    <div class="container">
+
+
+    <form method="POST" action="" class="form">
+
+      <div class="all-form">
+        <label for="iname">Name   </label>
+        <input type="text" id="iname" class="one-f" name="name" required="required" placeholder="Your Name" value={{request.form.name}} >
+
+      </div>
+
+      <div class="all-form">
+        <label for="iusername">Username</label>
+        <input type="text" id="iusername" class="one-f" name="username" required="required" placeholder="Enter username" value={{request.form.username}}>
+
+      </div>
+
+      <div class="all-form">
+        <label for="iemail">Email</label>
+        <input type="text" id="iemail" class="one-f" name="useremail"  required="required"  placeholder="Enter your email"  value={{request.form.useremail}}>
+
+      </div>
+
+      <div class="all-form">
+        <label for="ipassword">Password</label>
+        <input type="password" id="ipassword" class="one-f" name="password" required="required" placeholder="Enter your password" value={{request.form.password}} >
+
+      </div>
+
+      <div class="all-form">
+        <label for="iconfpassword">Check password</label>
+        <input type="password" id="iconfpassword" class="one-f" name="conf" required="required" placeholder="Check password" value={{request.form.conf}} >
+
+      </div>
+
+
+      <button type="submit" name="button">Enter your world</button>
+
+
+
+    </form>
+
+
+    </div>
+
+
+  </body>
+</html>

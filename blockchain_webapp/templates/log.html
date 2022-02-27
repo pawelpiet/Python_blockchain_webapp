@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <title>Login</title>
+    <header class="header">
+        <div class="content">
+            <h1 class="heading">
+                <span class="small">Login to</span>
+                <br>
+                <span class="no-fill">LucioCoin</span>
+            </h1>
+
+        </div>
+      </header>
+
+  </head>
+  <body>
+
+
+
+    <form method="POST" action="" class="form">
+
+
+
+
+        <label for="iusername">Username</label>
+        <input type="text" id="iusername" class="one-f" name="username" required="required"  value={{request.form.username}}>
+
+
+
+
+        <label for="ipassword">Password</label>
+        <input type="password" id="ipassword" class="one-f" name="password" required="required"  value={{request.form.password}} >
+
+
+
+
+      <span>
+        <a>
+      <button type="submit" name="button" class="simple">Go!</button>
+      </a>
+    </span>
+
+
+    </form>
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.ttext{
+  font-style: italic;
+  text-decoration: overline;
+  font-weight: bold;
+
+}
+
+
+.draw {
+  margin: 10px;
+  left: auto;
+  position: absolute;
+
+}
+
+.center{
+  margin-left: 1000px;
+}
